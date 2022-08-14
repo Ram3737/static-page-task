@@ -1,0 +1,64 @@
+.nav {
+  background-color: #f9f9f9;
+  grid-row: 1 / span 3;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.navBar {
+  width: 98%;
+  height: 100%;
+  margin: 0 0;
+  margin-top: 6%;
+  gap: 5%;
+  padding-left: 0%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  list-style-type: none;
+  justify-items: center;
+}
+
+.logo {
+  padding-left: 7%;
+}
+
+.navBar li {
+  width: 90%;
+  height: 10%;
+  align-items: start;
+  align-self: center;
+  /* background-color: bisque; */
+  transition: all 0.5s;
+}
+
+.navBar li:last-child {
+  margin-bottom: 10%;
+}
+
+.active {
+  box-shadow: -8px -1px 10px -4px rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
+  border-left: 4px solid #256c8e;
+}
+
+.svgIcon {
+  width: 90%;
+  padding-left: 10%;
+  justify-self: end;
+}
+
+.svgName {
+  width: 100%;
+  font-size: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 40%;
+  align-self: center;
+  justify-self: start;
+}

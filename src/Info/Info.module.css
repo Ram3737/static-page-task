@@ -1,0 +1,363 @@
+.info {
+  background: radial-gradient(ellipse at top, #256c8e, transparent),
+    radial-gradient(ellipse at bottom, #256c8e, transparent);
+  display: grid;
+  grid-template-columns: 1.2fr 3fr;
+  justify-content: start;
+  /* justify-items: center; */
+  gap: 1%;
+}
+
+.infoChart {
+  width: 90%;
+  height: 99%;
+  align-self: center;
+  /* background-color: white; */
+  padding-left: 3%;
+}
+
+.chart {
+  /* background-color: blue; */
+  margin: 0;
+  margin-left: 5%;
+  width: 100%;
+  height: 91%;
+}
+
+.chart p {
+  width: 100%;
+  font-size: 180%;
+  padding-left: 15%;
+  padding-bottom: 10%;
+  padding-top: 12%;
+  color: white;
+  font-weight: 120%;
+}
+
+.donChart {
+  font-family: sans-serif;
+  padding-left: 7%;
+  overflow: auto;
+}
+
+.dchart-innertext-value {
+  display: none;
+}
+.dchart-legend {
+  border: 1px solid black !important;
+}
+
+/* ///////////////////////////////////// */
+
+.infoContent {
+  width: 98%;
+  height: 90%;
+  align-self: center;
+  /* background-color: orangered; */
+}
+
+.content {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* background-color: blue; */
+  padding-left: 0;
+  margin: 0;
+  width: 99%;
+  height: 100%;
+}
+
+.content li {
+  align-self: center;
+  justify-self: center;
+  padding-left: 15%;
+  display: grid;
+  height: 70%;
+  grid-template-rows: 3fr 2fr;
+  transition: all 0.5s;
+}
+
+.icon {
+  padding-left: 10%;
+  align-self: end;
+  height: 90%;
+  width: 90%;
+  fill: white;
+}
+
+.values {
+  margin-top: 5%;
+  align-self: start;
+  justify-self: start;
+  font-size: 250%;
+  padding-left: 18%;
+}
+
+h1 {
+  color: white;
+}
+
+.data {
+  align-self: start;
+  justify-self: start;
+  color: white;
+  width: 100%;
+}
+
+.data p {
+  margin: 0;
+  padding-left: 18%;
+  align-self: start;
+  justify-self: center;
+  font-size: 120%;
+  text-align: start;
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .info {
+    background: radial-gradient(ellipse at top, #256c8e, transparent),
+      radial-gradient(ellipse at bottom, #256c8e, transparent);
+    display: grid;
+    grid-template-columns: 1.2fr 3fr;
+    justify-content: start;
+    /* justify-items: center; */
+    gap: 1%;
+    position: relative;
+    height: 100%;
+  }
+
+  .content {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    padding-left: 0;
+    margin: 0;
+    width: 99%;
+    height: 80%;
+    margin-top: 2%;
+    transition: all 0.5s;
+  }
+
+  .icon {
+    padding-left: 10%;
+    align-self: end;
+    height: 100%;
+    width: 100%;
+  }
+
+  .chart {
+    margin: 0;
+    margin-left: 5%;
+    width: 100%;
+    height: 79%;
+    margin-top: 25%;
+  }
+
+  .infoChart {
+    width: 90%;
+    height: 100%;
+    align-self: center;
+    margin-top: 3%;
+    padding-left: 3%;
+  }
+
+  .infoContent {
+    width: 98%;
+    height: 100%;
+    align-self: center;
+  }
+
+  .content li {
+    align-self: center;
+    justify-self: center;
+    padding-left: 10%;
+    display: grid;
+    height: 80%;
+    grid-template-rows: 3fr 2fr;
+    transition: all 0.5s;
+  }
+  .chart p {
+    width: 100%;
+    padding-left: 15%;
+    padding-bottom: 5%;
+    padding-top: 20%;
+    color: white;
+  }
+
+  .values {
+    margin-top: 5%;
+    align-self: start;
+    justify-self: start;
+    font-size: 280%;
+    padding-left: 18%;
+  }
+
+  .data p {
+    margin: 0;
+    padding-left: 18%;
+    align-self: start;
+    justify-self: center;
+    font-size: 140%;
+    text-align: start;
+  }
+}
+
+@media (max-width: 57em) {
+  .chart {
+    margin-top: 14%;
+  }
+
+  .content {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 59em) {
+  .chart {
+    margin-top: 10%;
+  }
+
+  .content {
+    margin-top: 4%;
+  }
+}
+
+@media (max-width: 48em) {
+  .chart {
+    margin-top: 18%;
+  }
+
+  .content {
+    margin-top: 10%;
+  }
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .info {
+    background: radial-gradient(ellipse at top, #256c8e, transparent),
+      radial-gradient(ellipse at bottom, #256c8e, transparent);
+    display: grid;
+    grid-template-columns: 1.2fr;
+    grid-template-rows: 50% 3fr;
+    justify-content: start;
+    /* justify-items: center; */
+    gap: 1%;
+  }
+
+  .chart {
+    margin: 0;
+
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    transition: all 0.5s;
+  }
+
+  .infoChart {
+    width: 98%;
+    height: 100%;
+    align-self: center;
+    margin-top: 10%;
+  }
+  .chart p {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2%;
+    padding-right: 17%;
+    padding-top: 5%;
+    font-size: 385%;
+    color: white;
+  }
+  .donChart {
+    font-family: sans-serif;
+    padding-left: 30%;
+    padding-top: 7%;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .content {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    width: 95%;
+    height: 85%;
+    margin-left: 4%;
+    margin-top: 3%;
+    padding-top: 2%;
+    transition: all 0.5s;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .infoChart {
+    width: 98%;
+    height: 100%;
+    align-self: center;
+    margin-top: 5%;
+  }
+
+  .infoContent {
+    width: 98%;
+    height: 117%;
+    align-self: center;
+  }
+  .donChart {
+    font-family: sans-serif;
+    padding-left: 26%;
+    padding-top: 1%;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .chart p {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-right: 25%;
+    padding-top: 2%;
+    font-size: 250%;
+    color: white;
+  }
+
+  .icon {
+    padding-left: 5%;
+    align-self: end;
+    height: 85%;
+    width: 85%;
+  }
+  .values {
+    margin-top: 5%;
+    align-self: start;
+    justify-self: start;
+    font-size: 250%;
+    padding-left: 10%;
+  }
+
+  .data p {
+    margin: 0;
+    padding-left: 10%;
+    align-self: start;
+    justify-self: center;
+    font-size: 170%;
+    text-align: start;
+  }
+}

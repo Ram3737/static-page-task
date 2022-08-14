@@ -1,0 +1,7 @@
+.mainGrid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 17fr;
+  grid-template-rows: 1fr 2fr 8fr;
+  height: 100vh;
+}

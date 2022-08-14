@@ -1,0 +1,90 @@
+.header {
+  background: radial-gradient(ellipse at top, #134359, transparent),
+    radial-gradient(ellipse at bottom, #134359, transparent);
+  display: flex;
+  justify-content: start;
+  gap: 55%;
+}
+
+.headerName {
+  width: 25%;
+  align-self: center;
+  /* background-color: white; */
+  color: white;
+}
+
+.headerName h1 {
+  font-size: bold;
+  padding-left: 5%;
+}
+
+.headerProfile {
+  width: 18%;
+  align-self: center;
+  /* background-color: orangered; */
+}
+
+.wholeProfile {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 0.5fr 0.8fr 0.3fr;
+  align-items: center;
+  gap: 5%;
+  justify-items: start;
+  align-items: center;
+  padding-right: 25%;
+  padding-left: 10%;
+}
+
+.profilePic {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #087f5b;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
+}
+
+.profilePic h3 {
+  margin: 0 0;
+  margin-top: 29%;
+  margin-left: 31%;
+  font-size: bold;
+}
+
+.profileName {
+  color: white;
+}
+
+.profileName p {
+  margin: 0 0;
+  font-size: bold;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .profileName {
+    display: none;
+  }
+  .arrow {
+    display: none;
+  }
+  .header {
+    gap: 75%;
+  }
+}

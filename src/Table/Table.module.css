@@ -1,0 +1,283 @@
+.tableGrid {
+  background-color: #bababa;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
+}
+
+/* .tableArea {
+  width: 98%;
+  height: 95%;
+  align-self: center;
+  background-color: blueviolet;
+} */
+
+.table {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 1%;
+  font-size: 100%;
+}
+
+table {
+  /* color: #ef1111; */
+  width: 100%;
+  height: 98%;
+  border-spacing: 0;
+
+  background-color: #bababa;
+  transition: all 0.5s;
+}
+
+td {
+  border-bottom: 3px solid transparent;
+}
+
+th {
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+
+.additionalHeader th {
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.dropDown {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  align-items: center;
+  height: 100%;
+  justify-items: end;
+  /* background-color: red; */
+  border-bottom: transparent;
+}
+
+.dropDown p {
+  display: inline-block;
+  padding-right: 10%;
+  margin-bottom: 0;
+  align-self: end;
+}
+
+.dropDown select {
+  height: 40%;
+  align-self: end;
+}
+
+td {
+  text-align: left;
+}
+
+.headerTable {
+  height: 4rem;
+  vertical-align: bottom;
+  font-size: 130%;
+  border-bottom: 0;
+  background-color: #bababa;
+}
+
+.buttonAadhar {
+  margin-bottom: 0;
+  cursor: pointer;
+  width: 20%;
+  align-self: center;
+  font: inherit;
+  font-size: 100%;
+  color: #256c8e;
+  background-color: #bababa;
+  border: 2px solid #256c8e;
+  border-radius: 4px;
+  padding: 1% 2.5%;
+  text-decoration: none;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
+
+  display: flex;
+  gap: 5%;
+  margin-left: 35%;
+}
+
+.buttonPayment {
+  margin-bottom: 0;
+  cursor: pointer;
+  width: 20%;
+  align-self: center;
+  font: inherit;
+  font-size: 100%;
+  color: white;
+  background-color: #087f5b;
+  border: 2px solid #087f5b;
+  border-radius: 4px;
+  padding: 1% 2.5%;
+  text-decoration: none;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
+}
+
+.column:nth-child(odd) {
+  background-color: rgb(231, 227, 227);
+}
+
+.column:nth-child(even) {
+  background-color: #bababa;
+}
+
+.delayed {
+  color: red;
+}
+
+.overdue {
+  color: rgb(173, 133, 0);
+}
+
+.tick {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #087f5b;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
+}
+
+.tick h3 {
+  padding-top: 4%;
+  margin-left: 27%;
+}
+
+.active {
+  border-bottom: 3px solid #256c8e;
+}
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .buttonAadhar {
+    margin-bottom: 0;
+    cursor: pointer;
+    width: 20%;
+    align-self: center;
+    font: inherit;
+    font-size: 100%;
+
+    background-color: #bababa;
+
+    border-radius: 4px;
+    padding: 1% 2.5%;
+    text-decoration: none;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    transition: all 0.5s;
+
+    display: flex;
+    gap: 5%;
+    margin-left: 35%;
+  }
+
+  .buttonPayment {
+    margin-bottom: 0;
+    cursor: pointer;
+    width: 20%;
+    align-self: center;
+    font: inherit;
+    font-size: 110%;
+    color: white;
+    background-color: #087f5b;
+    border: 2px solid #087f5b;
+    border-radius: 4px;
+    padding: 1% 2.5%;
+    text-decoration: none;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 44em) {
+  .buttonAadhar {
+    margin-bottom: 0;
+    cursor: pointer;
+    width: 25%;
+    align-self: center;
+    font: inherit;
+    font-size: 100%;
+
+    background-color: #bababa;
+
+    border-radius: 4px;
+    padding: 1% 2.5%;
+    text-decoration: none;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    transition: all 0.5s;
+
+    display: flex;
+    gap: 5%;
+    margin-left: 10%;
+  }
+
+  .buttonPayment {
+    margin-bottom: 0;
+    cursor: pointer;
+    width: 25%;
+    margin-left: 3%;
+    align-self: center;
+    font: inherit;
+    font-size: 110%;
+    color: white;
+    background-color: #087f5b;
+    border: 2px solid #087f5b;
+    border-radius: 4px;
+    padding: 1% 2.5%;
+    text-decoration: none;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 34em) {
+  .buttonAadhar {
+    margin-bottom: 0;
+    cursor: pointer;
+    width: 25%;
+    align-self: center;
+    font: inherit;
+    font-size: 100%;
+
+    background-color: #bababa;
+
+    border-radius: 4px;
+    padding: 1% 2.5%;
+    text-decoration: none;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    transition: all 0.5s;
+
+    display: flex;
+    gap: 5%;
+    margin-left: 5%;
+  }
+
+  .buttonPayment {
+    margin-bottom: 0;
+    cursor: pointer;
+    width: 25%;
+    margin-left: 3%;
+    align-self: center;
+    font: inherit;
+    font-size: 110%;
+    color: white;
+    background-color: #087f5b;
+    border: 2px solid #087f5b;
+    border-radius: 4px;
+    padding: 1% 2.5%;
+    text-decoration: none;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+    transition: all 0.5s;
+  }
+}
